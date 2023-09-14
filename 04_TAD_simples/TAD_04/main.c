@@ -9,28 +9,21 @@ int main() {
     tAluno alunoAtual, auxiliaOrdenacao;
     for(int i = 0; i < qtdAlunos; i++) { // le os alunos
         alunoAtual = LeAluno();
+        alunos[i] = alunoAtual;
+    }
 
-        if(i == 0) {
-            alunos[i] = alunoAtual;
-            continue;
-        }
-
-        for(int j = 0; j < i; j++) { // verifica se algum aluno ja lido tem matricula menor
-            if(EhMatriculaMenor(alunoAtual, alunos[j])) { // se a matricula for menor, troca de posicao
+    for(int i = 0; i < qtdAlunos; i++) {
+        for(int j = i + 1; j < qtdAlunos; j++) {
+            if(EhMatriculaMenor(alunos[j], alunos[i])) {
                 auxiliaOrdenacao = alunos[j];
-                alunos[j] = alunoAtual;
+                alunos[j] = alunos[i];
                 alunos[i] = auxiliaOrdenacao;
-                break;
-            } else if(j == i - 1) { // se o ultimo aluno anterior nn tiver matricula menor: coloca o alunoAtual na ultima posicao do vetor 
-                alunos[i] = alunoAtual;
-                break;
             }
-
         }
     }
 
     for(int i = 0; i < qtdAlunos; i++) {
-        PrintaNome(alunos[i]);
+        if(VerificaAprovacao(alunos[i])) PrintaNome(alunos[i]);
     }
 
     return 0;
