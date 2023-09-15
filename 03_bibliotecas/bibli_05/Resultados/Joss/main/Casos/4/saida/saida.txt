@@ -14,8 +14,7 @@ Tamanho da string: 19
 5 - Imprimir string ao contrario
 6 - Encerrar o programa
 Opcao escolhida: 
-String invertida: 
-luaf noitatnemgest
+String invertida: luaf noitatnemgest
 
 1 - Tamanho da string
 2 - Copiar string

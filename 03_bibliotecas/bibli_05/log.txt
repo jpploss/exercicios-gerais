@@ -88,7 +88,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Pasta completo / Caso 2:
  - Resultado para o saida.txt: Incorreto!
  - Pasta completo / Caso 3:
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok!
  - Pasta completo / Caso 4:
  - Resultado para o saida.txt: Incorreto!
 
@@ -103,10 +103,10 @@ Nome 0: Joss
  - Linkagens Corretas: 3 de 3 / Nota 10.00
  - Resultados Corretos main: 0 de 4 / Nota 0.00
  - Resultados Corretos string_utils: 1 de 4 / Nota 2.50
- - Resultados Corretos completo: 0 de 4 / Nota 0.00
- - Soma das notas do Joss: 32.500
+ - Resultados Corretos completo: 1 de 4 / Nota 2.50
+ - Soma das notas do Joss: 35.000
  - Campos Considerados: 6
- - Média do Joss: 5.41
+ - Média do Joss: 5.83
 
 ----------------------------------------------------------------------------
 

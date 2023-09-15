@@ -29,7 +29,7 @@ int main() {
             break;
         case 5:
             string_reverse(word);
-            printf("String invertida: \n%s\n\n", word);
+            printf("String invertida: %s\n\n", word);
             break;
         case 6:
             break;
