@@ -1,24 +1,24 @@
 #include "jogada.h"
-#include "tabuleiro.h"
 #include <stdio.h>
 
 /**
- * Lê uma jogada e retorna uma estrutura do tipo tJogada.
- * 
+ * Lê uma jogada e retorna uma estrutura do tipo tJogada e define o valor da variavel sucesso.
+ * Se a jogada foi lida com sucesso, ou seja, foi lido um valor para x e outro para y, sucesso = 1, caso contrário, sucesso = 0.
  * @return a jogada lida.
  */
 tJogada LeJogada() {
     tJogada jogada;
-
+    int retornoScanf;
     do {
         printf("Digite uma posicao (x e y):\n");
-    } while(scanf("%d%d", &jogada.x, &jogada.y) != 2);
+        retornoScanf = scanf("%d%d", &jogada.x, &jogada.y);
 
-    if(!EhPosicaoValidaTabuleiro(jogada.x, jogada.y)) {
-        jogada.sucesso = 0;
-    } else {
-        jogada.sucesso = 1;
-    }
+        // se nn limpar o buffer o scanf retorna "0" automaticamente (pq ele vai tentar ler o que nn conseguiu da vez passada), entrando em loop infinito
+        scanf("%*[^\n]");
+        scanf("%*c");
+
+    } while(retornoScanf != 2);
+    jogada.sucesso = 1;
     return jogada;
 }
 

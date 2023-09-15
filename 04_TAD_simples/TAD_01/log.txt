@@ -1,0 +1,256 @@
+Ignorando o Valgrind
+Rodando o script do Aluno - Arquivos header necessários do professor existem na pasta Includes
+ - Arquivos objetos necessários do professor existem na pasta Gabarito-obj.
+#######################################
+ALUNO: JoaoLoss
+#######################################
+CRIANDO O DIRETÓRIO DE RESULTADO PARA JoaoLoss:
+ - Diretório Resultados/JoaoLoss criado com sucesso!
+ - Diretório Resultados/JoaoLoss/jogada criado com sucesso!
+ - Diretório Resultados/JoaoLoss/jogador criado com sucesso!
+ - Diretório Resultados/JoaoLoss/jogo criado com sucesso!
+ - Diretório Resultados/JoaoLoss/main criado com sucesso!
+ - Diretório Resultados/JoaoLoss/tabuleiro criado com sucesso!
+ - Diretório Resultados/JoaoLoss/completo criado com sucesso!
+ - Arquivos criados: ok!
+
+CHECKANDO OS ARQUIVOS DO ALUNO:
+ - Arquivo esperado 'Respostas/JoaoLoss/jogada.c' encontrado!
+ - Arquivo esperado 'Respostas/JoaoLoss/jogada.h' encontrado!
+ - Arquivo esperado 'Respostas/JoaoLoss/jogador.c' encontrado!
+ - Arquivo esperado 'Respostas/JoaoLoss/jogador.h' encontrado!
+ - Arquivo esperado 'Respostas/JoaoLoss/jogo.c' encontrado!
+ - Arquivo esperado 'Respostas/JoaoLoss/jogo.h' encontrado!
+ - Arquivo esperado 'Respostas/JoaoLoss/main.c' encontrado!
+ - Arquivo esperado 'Respostas/JoaoLoss/tabuleiro.c' encontrado!
+ - Arquivo esperado 'Respostas/JoaoLoss/tabuleiro.h' encontrado!
+ - Arquivos esperados enviados: Ok!
+
+COPIANDO OS ARQUIVOS PARA A PASTA DE RESULTADO DO ALUNO:
+ - Pasta jogada:
+ - Copiando os Casos de teste para a pasta Resultados/JoaoLoss/jogada
+ - Copiando os 'Respostas/JoaoLoss/*.h' do aluno para a pasta Resultados/JoaoLoss/jogada
+ - Copiando os 'Includes/*.h' do professor para a pasta Resultados/JoaoLoss/jogada
+ - Copiando os 'Respostas/JoaoLoss/*.c' do aluno para a pasta Resultados/JoaoLoss/jogada
+ - Pasta jogador:
+ - Copiando os Casos de teste para a pasta Resultados/JoaoLoss/jogador
+ - Copiando os 'Respostas/JoaoLoss/*.h' do aluno para a pasta Resultados/JoaoLoss/jogador
+ - Copiando os 'Includes/*.h' do professor para a pasta Resultados/JoaoLoss/jogador
+ - Copiando os 'Respostas/JoaoLoss/*.c' do aluno para a pasta Resultados/JoaoLoss/jogador
+ - Pasta jogo:
+ - Copiando os Casos de teste para a pasta Resultados/JoaoLoss/jogo
+ - Copiando os 'Respostas/JoaoLoss/*.h' do aluno para a pasta Resultados/JoaoLoss/jogo
+ - Copiando os 'Includes/*.h' do professor para a pasta Resultados/JoaoLoss/jogo
+ - Copiando os 'Respostas/JoaoLoss/*.c' do aluno para a pasta Resultados/JoaoLoss/jogo
+ - Pasta main:
+ - Copiando os Casos de teste para a pasta Resultados/JoaoLoss/main
+ - Copiando os 'Respostas/JoaoLoss/*.h' do aluno para a pasta Resultados/JoaoLoss/main
+ - Copiando os 'Includes/*.h' do professor para a pasta Resultados/JoaoLoss/main
+ - Copiando os 'Respostas/JoaoLoss/*.c' do aluno para a pasta Resultados/JoaoLoss/main
+ - Pasta tabuleiro:
+ - Copiando os Casos de teste para a pasta Resultados/JoaoLoss/tabuleiro
+ - Copiando os 'Respostas/JoaoLoss/*.h' do aluno para a pasta Resultados/JoaoLoss/tabuleiro
+ - Copiando os 'Includes/*.h' do professor para a pasta Resultados/JoaoLoss/tabuleiro
+ - Copiando os 'Respostas/JoaoLoss/*.c' do aluno para a pasta Resultados/JoaoLoss/tabuleiro
+ - Pasta completo:
+ - Copiando os Casos de teste para a pasta Resultados/JoaoLoss/completo
+ - Copiando os 'Respostas/JoaoLoss/*.h' do aluno para a pasta Resultados/JoaoLoss/completo
+ - Copiando os 'Respostas/JoaoLoss/*.c' do aluno para a pasta Resultados/JoaoLoss/completo
+ - Arquivos copiados: ok!
+
+COMPILANDO OS ARQUIVOS NA PASTA DE RESULTADO DO ALUNO:
+ - Pasta jogada:
+ - Compilando o arquivo jogada.c do aluno, gerando o jogada.o
+ - Compilando o arquivo jogador.c do aluno, gerando o jogador.o
+ - Compilando o arquivo jogo.c do aluno, gerando o jogo.o
+ - Compilando o arquivo main.c do aluno, gerando o main.o
+ - Compilando o arquivo tabuleiro.c do aluno, gerando o tabuleiro.o
+ - Compilando o arquivo voto.c do aluno, gerando o voto.o
+ - Arquivo de output gerado: Resultados/JoaoLoss/jogada/result_compilation.txt.
+ - Pasta jogador:
+ - Compilando o arquivo jogada.c do aluno, gerando o jogada.o
+ - Compilando o arquivo jogador.c do aluno, gerando o jogador.o
+ - Compilando o arquivo jogo.c do aluno, gerando o jogo.o
+ - Compilando o arquivo main.c do aluno, gerando o main.o
+ - Compilando o arquivo tabuleiro.c do aluno, gerando o tabuleiro.o
+ - Compilando o arquivo voto.c do aluno, gerando o voto.o
+ - Arquivo de output gerado: Resultados/JoaoLoss/jogador/result_compilation.txt.
+ - Pasta jogo:
+ - Compilando o arquivo jogada.c do aluno, gerando o jogada.o
+ - Compilando o arquivo jogador.c do aluno, gerando o jogador.o
+ - Compilando o arquivo jogo.c do aluno, gerando o jogo.o
+ - Compilando o arquivo main.c do aluno, gerando o main.o
+ - Compilando o arquivo tabuleiro.c do aluno, gerando o tabuleiro.o
+ - Compilando o arquivo voto.c do aluno, gerando o voto.o
+ - Arquivo de output gerado: Resultados/JoaoLoss/jogo/result_compilation.txt.
+ - Pasta main:
+ - Compilando o arquivo jogada.c do aluno, gerando o jogada.o
+ - Compilando o arquivo jogador.c do aluno, gerando o jogador.o
+ - Compilando o arquivo jogo.c do aluno, gerando o jogo.o
+ - Compilando o arquivo main.c do aluno, gerando o main.o
+ - Compilando o arquivo tabuleiro.c do aluno, gerando o tabuleiro.o
+ - Compilando o arquivo voto.c do aluno, gerando o voto.o
+ - Arquivo de output gerado: Resultados/JoaoLoss/main/result_compilation.txt.
+ - Pasta tabuleiro:
+ - Compilando o arquivo jogada.c do aluno, gerando o jogada.o
+ - Compilando o arquivo jogador.c do aluno, gerando o jogador.o
+ - Compilando o arquivo jogo.c do aluno, gerando o jogo.o
+ - Compilando o arquivo main.c do aluno, gerando o main.o
+ - Compilando o arquivo tabuleiro.c do aluno, gerando o tabuleiro.o
+ - Compilando o arquivo voto.c do aluno, gerando o voto.o
+ - Arquivo de output gerado: Resultados/JoaoLoss/tabuleiro/result_compilation.txt.
+ - Pasta completo:
+ - Compilando o arquivo jogada.c do aluno, gerando o jogada.o
+ - Compilando o arquivo jogador.c do aluno, gerando o jogador.o
+ - Compilando o arquivo jogo.c do aluno, gerando o jogo.o
+ - Compilando o arquivo main.c do aluno, gerando o main.o
+ - Compilando o arquivo tabuleiro.c do aluno, gerando o tabuleiro.o
+ - Compilando o arquivo voto.c do aluno, gerando o voto.o
+ - Arquivo de output gerado: Resultados/JoaoLoss/completo/result_compilation.txt.
+ - Copiando os arquivos objetos do professor para cada subpasta do Resultado do JoaoLoss:
+ - Copiando o Gabarito-obj/jogada.o para a pasta Resultados/JoaoLoss/jogador
+ - Copiando o Gabarito-obj/jogada.o para a pasta Resultados/JoaoLoss/jogo
+ - Copiando o Gabarito-obj/jogada.o para a pasta Resultados/JoaoLoss/main
+ - Copiando o Gabarito-obj/jogada.o para a pasta Resultados/JoaoLoss/tabuleiro
+ - Copiando o Gabarito-obj/jogador.o para a pasta Resultados/JoaoLoss/jogada
+ - Copiando o Gabarito-obj/jogador.o para a pasta Resultados/JoaoLoss/jogo
+ - Copiando o Gabarito-obj/jogador.o para a pasta Resultados/JoaoLoss/main
+ - Copiando o Gabarito-obj/jogador.o para a pasta Resultados/JoaoLoss/tabuleiro
+ - Copiando o Gabarito-obj/jogo.o para a pasta Resultados/JoaoLoss/jogada
+ - Copiando o Gabarito-obj/jogo.o para a pasta Resultados/JoaoLoss/jogador
+ - Copiando o Gabarito-obj/jogo.o para a pasta Resultados/JoaoLoss/main
+ - Copiando o Gabarito-obj/jogo.o para a pasta Resultados/JoaoLoss/tabuleiro
+ - Copiando o Gabarito-obj/main.o para a pasta Resultados/JoaoLoss/jogada
+ - Copiando o Gabarito-obj/main.o para a pasta Resultados/JoaoLoss/jogador
+ - Copiando o Gabarito-obj/main.o para a pasta Resultados/JoaoLoss/jogo
+ - Copiando o Gabarito-obj/main.o para a pasta Resultados/JoaoLoss/tabuleiro
+ - Copiando o Gabarito-obj/tabuleiro.o para a pasta Resultados/JoaoLoss/jogada
+ - Copiando o Gabarito-obj/tabuleiro.o para a pasta Resultados/JoaoLoss/jogador
+ - Copiando o Gabarito-obj/tabuleiro.o para a pasta Resultados/JoaoLoss/jogo
+ - Copiando o Gabarito-obj/tabuleiro.o para a pasta Resultados/JoaoLoss/main
+ - Arquivos Compilados: ok!
+
+LINKANDO OS ARQUIVOS COMPILADOS:
+ - Pasta jogada:
+ - Gerando o binário prog linkando com o(s) arquivo(s) jogada/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/JoaoLoss/jogada/result_linking.txt
+ - Pasta jogador:
+ - Gerando o binário prog linkando com o(s) arquivo(s) jogador/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/JoaoLoss/jogador/result_linking.txt
+ - Pasta jogo:
+ - Gerando o binário prog linkando com o(s) arquivo(s) jogo/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/JoaoLoss/jogo/result_linking.txt
+ - Pasta main:
+ - Gerando o binário prog linkando com o(s) arquivo(s) main/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/JoaoLoss/main/result_linking.txt
+ - Pasta tabuleiro:
+ - Gerando o binário prog linkando com o(s) arquivo(s) tabuleiro/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/JoaoLoss/tabuleiro/result_linking.txt
+ - Pasta completo:
+ - Gerando o binário prog linkando com o(s) arquivo(s) completo/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/JoaoLoss/completo/result_linking.txt
+
+EXECUTANDO O VALGRIND EM CADA CASO:
+ - Pasta jogada / Caso 1:
+ - Resultado para o saida.txt: Ok!
+ - Pasta jogada / Caso 2:
+ - Resultado para o saida.txt: Ok!
+ - Pasta jogada / Caso 3:
+ - Resultado para o saida.txt: Ok!
+ - Pasta jogada / Caso 4:
+ - Resultado para o saida.txt: Ok!
+ - Pasta jogada / Caso 5:
+ - Resultado para o saida.txt: Ok!
+ - Pasta jogada / Caso 6:
+ - Resultado para o saida.txt: Ok!
+ - Pasta jogador / Caso 1:
+ - Resultado para o saida.txt: Ok!
+ - Pasta jogador / Caso 2:
+ - Resultado para o saida.txt: Ok!
+ - Pasta jogador / Caso 3:
+ - Resultado para o saida.txt: Ok!
+ - Pasta jogador / Caso 4:
+ - Resultado para o saida.txt: Ok!
+ - Pasta jogador / Caso 5:
+ - Resultado para o saida.txt: Ok!
+ - Pasta jogador / Caso 6:
+ - Resultado para o saida.txt: Ok!
+ - Pasta jogo / Caso 1:
+ - Resultado para o saida.txt: Ok!
+ - Pasta jogo / Caso 2:
+ - Resultado para o saida.txt: Ok!
+ - Pasta jogo / Caso 3:
+ - Resultado para o saida.txt: Ok!
+ - Pasta jogo / Caso 4:
+ - Resultado para o saida.txt: Ok!
+ - Pasta jogo / Caso 5:
+ - Resultado para o saida.txt: Ok!
+ - Pasta jogo / Caso 6:
+ - Resultado para o saida.txt: Ok!
+ - Pasta main / Caso 1:
+ - Resultado para o saida.txt: Ok!
+ - Pasta main / Caso 2:
+ - Resultado para o saida.txt: Ok!
+ - Pasta main / Caso 3:
+ - Resultado para o saida.txt: Ok!
+ - Pasta main / Caso 4:
+ - Resultado para o saida.txt: Ok!
+ - Pasta main / Caso 5:
+ - Resultado para o saida.txt: Ok!
+ - Pasta main / Caso 6:
+ - Resultado para o saida.txt: Ok!
+ - Pasta tabuleiro / Caso 1:
+ - Resultado para o saida.txt: Ok!
+ - Pasta tabuleiro / Caso 2:
+ - Resultado para o saida.txt: Ok!
+ - Pasta tabuleiro / Caso 3:
+ - Resultado para o saida.txt: Ok!
+ - Pasta tabuleiro / Caso 4:
+ - Resultado para o saida.txt: Ok!
+ - Pasta tabuleiro / Caso 5:
+ - Resultado para o saida.txt: Ok!
+ - Pasta tabuleiro / Caso 6:
+ - Resultado para o saida.txt: Ok!
+ - Pasta completo / Caso 1:
+ - Resultado para o saida.txt: Ok!
+ - Pasta completo / Caso 2:
+ - Resultado para o saida.txt: Ok!
+ - Pasta completo / Caso 3:
+ - Resultado para o saida.txt: Ok!
+ - Pasta completo / Caso 4:
+ - Resultado para o saida.txt: Ok!
+ - Pasta completo / Caso 5:
+ - Resultado para o saida.txt: Ok!
+ - Pasta completo / Caso 6:
+ - Resultado para o saida.txt: Ok!
+
+#######################################
+RESULTADOS FINAIS
+#######################################
+
+----------------------------------------------------------------------------
+Nome 0: JoaoLoss
+ - Arquivos Corretos: 9 de 9 / Nota 10.00
+ - Compilações Corretas: 36 de 36 / Nota 10.00
+ - Linkagens Corretas: 6 de 6 / Nota 10.00
+ - Resultados Corretos jogada: 6 de 6 / Nota 10.00
+ - Resultados Corretos jogador: 6 de 6 / Nota 10.00
+ - Resultados Corretos jogo: 6 de 6 / Nota 10.00
+ - Resultados Corretos main: 6 de 6 / Nota 10.00
+ - Resultados Corretos tabuleiro: 6 de 6 / Nota 10.00
+ - Resultados Corretos completo: 6 de 6 / Nota 10.00
+ - Soma das notas do JoaoLoss: 90.000
+ - Campos Considerados: 9
+ - Média do JoaoLoss: 10.00
+
+----------------------------------------------------------------------------
+
+Arquivo CSV Resultado.csv com os resultados finais foi gerado na pasta raíz!
+
+

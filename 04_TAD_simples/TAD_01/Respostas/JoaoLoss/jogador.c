@@ -33,7 +33,7 @@ tTabuleiro JogaJogador(tJogador jogador, tTabuleiro tabuleiro) {
         jogada = LeJogada();
         x = ObtemJogadaX(jogada);
         y = ObtemJogadaY(jogada);
-        if(!FoiJogadaBemSucedida(jogada)) {
+        if(!EhPosicaoValidaTabuleiro(x, y)) {
             printf("Posicao invalida (FORA DO TABULEIRO - [%d,%d] )!\n", x, y);
             continue;
         } else if(!EstaLivrePosicaoTabuleiro(tabuleiro, x, y)) {
