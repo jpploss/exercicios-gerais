@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdio.h>
+
 typedef struct {
     int codigo;
     int preco;
@@ -13,8 +16,12 @@ tFilme LeFilme() {
     return filme;
 }
 
-int EhMesmoCodigo(tFilme filme1, tFilme filme2) {
-    if(filme1.codigo == filme2.codigo) return 1;
+int ObtemCodigo(tFilme filme) {
+    return filme.codigo;
+}
+
+int EhMesmoCodigo(tFilme filme1, int codigo) {
+    if(filme1.codigo == codigo) return 1;
     return 0;
 }
 
@@ -28,22 +35,22 @@ int TemMaximoDeFitas(tFilme filme) {
     return 0;
 }
 
-int NomeMaiorNoAlfabeto(tFilme filme1, tFilme filme2) {
-    int i = 0;
-    int tam1 = 0, tam2 = 0;
-    while(filme1.nome[tam1] != 0) {
-        tam1++;
-    }
-    tam1++;
-    while(filme2.nome[tam2] != 0) {
-        tam2++;
-    }
-    tam2++;
+int EhNomeMaior(tFilme filme1, tFilme filme2) {
+    if(strcmp(filme1.nome, filme2.nome) > 0) return 1;
+    return 0;
+}
 
-    while(i < tam1 - 1) {
-        if(filme1.nome[i] > filme2.nome[i]) return 0;
-        else if(i == tam2 - 2) return 0;
-        i++;
-    }
-    return 1;
+tFilme RetiraFita(tFilme filme) {
+    filme.fitasDisponiveis -= 1;
+    return filme;
+}
+
+tFilme DevolveFita(tFilme filme) {
+    filme.fitasDisponiveis += 1;
+    return filme;
+}
+
+void PrintaFilme(tFilme filme) {
+    printf("%d - %s em estoque: %d\n", filme.codigo, filme.nome, filme.fitasDisponiveis);
+    return;
 }

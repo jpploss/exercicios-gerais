@@ -14,7 +14,7 @@ tEstoque OrdenaPeloNomeEstoque(tEstoque estoque) {
     tFilme aux;
     for(int i = 0; i < estoque.qtdFilmes; i++) {
         for(int j = i + 1; j < estoque.qtdFilmes; j++) {
-            if(NomeMaiorNoAlfabeto(estoque.filmes[i], estoque.filmes[j])) {
+            if(EhNomeMaior(estoque.filmes[i], estoque.filmes[j])) {
                 aux = estoque.filmes[i];
                 estoque.filmes[i] = estoque.filmes[j];
                 estoque.filmes[j] = aux;
@@ -25,8 +25,36 @@ tEstoque OrdenaPeloNomeEstoque(tEstoque estoque) {
 }
 
 int TemCodigoNoCadastro(tFilme filme, tEstoque estoque) {
+    codigoFilme = ObtemCodigo(filme);
     for(int i = 0; i < estoque.qtdFilmes; i++) {
-        if(EhMesmoCodigo(filme, estoque.filmes[i])) return 1;
+        if(EhMesmoCodigo(estoque.filmes[i], codigoFilme)) return 1;
     }
     return 0;
+}
+
+tEstoque AlugaFilme(tEstoque estoque, int codigo) {
+    for(int i = 0; i < estoque.qtdFilmes; i++) {
+        if(EhMesmoCodigo(estoque.filme[i], codigo)) {
+            estoque.filme[i] = RetiraFita(estoque.filme[i]);
+            return estoque;
+        }
+    }
+}
+
+tEstoque DevolveFilme(tEstoque estoque, int codigo) {
+    for(int i = 0; i < estoque.qtdFilmes; i++) {
+        if(EhMesmoCodigo(estoque.filme[i], codigo)) {
+            estoque.filme[i] = DevolveFita(estoque.filme[i]);
+            return estoque;
+        }
+    }
+}
+
+void PrintaEstoque(estoque) {
+    printf("~ESTOQUE~\n");
+    estoque = OrdenaPeloNomeEstoque(estoque);
+    for(int i = 0; i < estoque.qtdFilmes; i++) {
+        PrintaFilme(estoque.filmes[i]);
+    }
+
 }
