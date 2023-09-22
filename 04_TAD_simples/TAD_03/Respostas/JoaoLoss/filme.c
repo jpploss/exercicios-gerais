@@ -1,23 +1,22 @@
 #include <string.h>
 #include <stdio.h>
+#include "filme.h"
 
-typedef struct {
-    int codigo;
-    int preco;
-    char nome[20];
-    int qtdFitas;
-    int fitasDisponiveis;
-} tFilme;
-
-tFilme LeFilme() {
+tFilme LeECadastraFilme(int codigo) {
     tFilme filme;
-    scanf("%d,%[^,],%d,%d", &filme.codigo, filme.nome, &filme.preco, &filme.qtdFitas);
+    filme.codigo;
+    scanf("%[^,],%d,%d", filme.nome, &filme.preco, &filme.qtdFitas);
     filme.fitasDisponiveis = filme.qtdFitas;
+    printf("Filme cadastrado %d - %s\n", filme.codigo, filme.nome);
     return filme;
 }
 
 int ObtemCodigo(tFilme filme) {
     return filme.codigo;
+}
+
+int ObtemPreco(tFilme filme) {
+    return filme.preco;
 }
 
 int EhMesmoCodigo(tFilme filme1, int codigo) {

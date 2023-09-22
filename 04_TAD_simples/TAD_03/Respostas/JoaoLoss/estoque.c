@@ -1,9 +1,4 @@
-#include "filme.c"
-
-typedef struct {
-    tFilme filmes[100];
-    int qtdFilmes;
-} tEstoque;
+#include "estoque.h"
 
 tEstoque InicializaEstoque(tEstoque estoque) {
     estoque.qtdFilmes = 0;
@@ -25,7 +20,7 @@ tEstoque OrdenaPeloNomeEstoque(tEstoque estoque) {
 }
 
 int TemCodigoNoCadastro(tFilme filme, tEstoque estoque) {
-    codigoFilme = ObtemCodigo(filme);
+    int codigoFilme = ObtemCodigo(filme);
     for(int i = 0; i < estoque.qtdFilmes; i++) {
         if(EhMesmoCodigo(estoque.filmes[i], codigoFilme)) return 1;
     }
@@ -34,8 +29,8 @@ int TemCodigoNoCadastro(tFilme filme, tEstoque estoque) {
 
 tEstoque AlugaFilme(tEstoque estoque, int codigo) {
     for(int i = 0; i < estoque.qtdFilmes; i++) {
-        if(EhMesmoCodigo(estoque.filme[i], codigo)) {
-            estoque.filme[i] = RetiraFita(estoque.filme[i]);
+        if(EhMesmoCodigo(estoque.filmes[i], codigo)) {
+            estoque.filmes[i] = RetiraFita(estoque.filmes[i]);
             return estoque;
         }
     }
@@ -43,18 +38,23 @@ tEstoque AlugaFilme(tEstoque estoque, int codigo) {
 
 tEstoque DevolveFilme(tEstoque estoque, int codigo) {
     for(int i = 0; i < estoque.qtdFilmes; i++) {
-        if(EhMesmoCodigo(estoque.filme[i], codigo)) {
-            estoque.filme[i] = DevolveFita(estoque.filme[i]);
+        if(EhMesmoCodigo(estoque.filmes[i], codigo)) {
+            estoque.filmes[i] = DevolveFita(estoque.filmes[i]);
             return estoque;
         }
     }
 }
 
-void PrintaEstoque(estoque) {
+void PrintaEstoque(tEstoque estoque) {
     printf("~ESTOQUE~\n");
     estoque = OrdenaPeloNomeEstoque(estoque);
     for(int i = 0; i < estoque.qtdFilmes; i++) {
         PrintaFilme(estoque.filmes[i]);
     }
+}
 
+tEstoque ColocaNoEstoqueFilme(tEstoque estoque, tFilme filme) {
+    estoque.filmes[estoque.qtdFilmes] = filme;
+    estoque.qtdFilmes++;
+    return estoque;
 }
