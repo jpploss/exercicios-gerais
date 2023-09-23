@@ -4,10 +4,10 @@
 
 tFilme LeECadastraFilme(int codigo) {
     tFilme filme;
-    filme.codigo;
+    filme.codigo = codigo;
     scanf("%[^,],%d,%d", filme.nome, &filme.preco, &filme.qtdFitas);
     filme.fitasDisponiveis = filme.qtdFitas;
-    printf("Filme cadastrado %d - %s\n", filme.codigo, filme.nome);
+    printf("Filme cadastrado %d - %s\n", codigo, filme.nome);
     return filme;
 }
 
@@ -17,6 +17,10 @@ int ObtemCodigo(tFilme filme) {
 
 int ObtemPreco(tFilme filme) {
     return filme.preco;
+}
+
+int ObtemQtdFitasDisponiveis(tFilme filme) {
+    return filme.fitasDisponiveis;
 }
 
 int EhMesmoCodigo(tFilme filme1, int codigo) {
@@ -49,7 +53,7 @@ tFilme DevolveFita(tFilme filme) {
     return filme;
 }
 
-void PrintaFilme(tFilme filme) {
-    printf("%d - %s em estoque: %d\n", filme.codigo, filme.nome, filme.fitasDisponiveis);
+void PrintaNomeFilme(tFilme filme) {
+    printf("%s", filme.nome);
     return;
 }

@@ -12,6 +12,8 @@ typedef struct {
 tFilme LeECadastraFilme(int codigo);
 
 int ObtemCodigo(tFilme filme);
+int ObtemQtdFitasDisponiveis(tFilme filme);
+int ObtemPreco(tFilme filme);
 
 int EhMesmoCodigo(tFilme filme1, int codigo);
 
@@ -22,9 +24,8 @@ int TemMaximoDeFitas(tFilme filme);
 int EhNomeMaior(tFilme filme1, tFilme filme2);
 
 tFilme RetiraFita(tFilme filme);
-
 tFilme DevolveFita(tFilme filme);
 
-void PrintaFilme(tFilme filme);
+void PrintaNomeFilme(tFilme filme);
 
 #endif

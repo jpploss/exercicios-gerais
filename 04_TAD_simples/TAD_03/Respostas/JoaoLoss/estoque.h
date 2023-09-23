@@ -12,7 +12,7 @@ tEstoque InicializaEstoque(tEstoque estoque);
 
 tEstoque OrdenaPeloNomeEstoque(tEstoque estoque);
 
-int TemCodigoNoCadastro(tFilme filme, tEstoque estoque);
+int TemCodigoNoCadastro(int codigo, tEstoque estoque);
 
 tEstoque AlugaFilme(tEstoque estoque, int codigo);
 
@@ -20,6 +20,8 @@ tEstoque DevolveFilme(tEstoque estoque, int codigo);
 
 void PrintaEstoque(tEstoque estoque);
 
-tEstoque ColocaNoEstoqueFilme(tEstoque estoque, tFilme filme);
+tEstoque CadastroDeFilme(tEstoque estoque, int codigo);
+
+tFilme ObtemFilme(tEstoque estoque, int codigo);
 
 #endif
