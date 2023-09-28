@@ -1,12 +1,6 @@
 #include "data.h"
 #include <stdio.h>
 
-typedef struct Data {
-    int dia;
-    int mes; 
-    int ano; 
-} tData;
-
 /**
  * @brief Inicializa uma data com os valores passados como parâmetro.
  * 
@@ -34,7 +28,14 @@ void InicializaDataParam( int dia, int mes, int ano, tData *data) {
 void LeData( tData *data ) {
     int dia, mes, ano;
     scanf("%d%d%d", &dia, &mes, &ano);
+    if(mes > 12) {
+        mes = 12;
+    }
     InicializaDataParam(dia, mes, ano, data);
+    if(dia > InformaQtdDiasNoMes(data)) {
+        (*data).dia = InformaQtdDiasNoMes(data);
+    }
+
     return;
 }
 

@@ -10,8 +10,8 @@ int main()
     LeData(&dataIni);
     LeData(&dataFim);
     data = dataIni;
-    while( !EhIgual(data, dataFim) ) {
-        ImprimeData(data);
+    while( !EhIgual(&data, &dataFim) ) {
+        ImprimeData(&data);
         printf("\n");
         AvancaParaDiaSeguinte(&data);
     }

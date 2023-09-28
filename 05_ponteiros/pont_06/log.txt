@@ -1,0 +1,115 @@
+Ignorando o Valgrind
+Rodando o script do Aluno - Arquivos header necessários do professor existem na pasta Includes
+ - Arquivos objetos necessários do professor existem na pasta Gabarito-obj.
+#######################################
+ALUNO: JoaoLoss
+#######################################
+CRIANDO O DIRETÓRIO DE RESULTADO PARA JoaoLoss:
+ - Diretório Resultados/JoaoLoss criado com sucesso!
+ - Diretório Resultados/JoaoLoss/data criado com sucesso!
+ - Diretório Resultados/JoaoLoss/main criado com sucesso!
+ - Diretório Resultados/JoaoLoss/completo criado com sucesso!
+ - Arquivos criados: ok!
+
+CHECKANDO OS ARQUIVOS DO ALUNO:
+ - Arquivo esperado 'Respostas/JoaoLoss/data.c' encontrado!
+ - Arquivo esperado 'Respostas/JoaoLoss/data.h' encontrado!
+ - Arquivo esperado 'Respostas/JoaoLoss/main.c' encontrado!
+ - Arquivos esperados enviados: Ok!
+
+COPIANDO OS ARQUIVOS PARA A PASTA DE RESULTADO DO ALUNO:
+ - Pasta data:
+ - Copiando os Casos de teste para a pasta Resultados/JoaoLoss/data
+ - Copiando os 'Respostas/JoaoLoss/*.h' do aluno para a pasta Resultados/JoaoLoss/data
+ - Copiando os 'Includes/*.h' do professor para a pasta Resultados/JoaoLoss/data
+ - Copiando os 'Respostas/JoaoLoss/*.c' do aluno para a pasta Resultados/JoaoLoss/data
+ - Pasta main:
+ - Copiando os Casos de teste para a pasta Resultados/JoaoLoss/main
+ - Copiando os 'Respostas/JoaoLoss/*.h' do aluno para a pasta Resultados/JoaoLoss/main
+ - Copiando os 'Includes/*.h' do professor para a pasta Resultados/JoaoLoss/main
+ - Copiando os 'Respostas/JoaoLoss/*.c' do aluno para a pasta Resultados/JoaoLoss/main
+ - Pasta completo:
+ - Copiando os Casos de teste para a pasta Resultados/JoaoLoss/completo
+ - Copiando os 'Respostas/JoaoLoss/*.h' do aluno para a pasta Resultados/JoaoLoss/completo
+ - Copiando os 'Respostas/JoaoLoss/*.c' do aluno para a pasta Resultados/JoaoLoss/completo
+ - Arquivos copiados: ok!
+
+COMPILANDO OS ARQUIVOS NA PASTA DE RESULTADO DO ALUNO:
+ - Pasta data:
+ - Compilando o arquivo data.c do aluno, gerando o data.o
+ - Compilando o arquivo main.c do aluno, gerando o main.o
+ - Arquivo de output gerado: Resultados/JoaoLoss/data/result_compilation.txt.
+ - Pasta main:
+ - Compilando o arquivo data.c do aluno, gerando o data.o
+ - Compilando o arquivo main.c do aluno, gerando o main.o
+ - Arquivo de output gerado: Resultados/JoaoLoss/main/result_compilation.txt.
+ - Pasta completo:
+ - Compilando o arquivo data.c do aluno, gerando o data.o
+ - Compilando o arquivo main.c do aluno, gerando o main.o
+ - Arquivo de output gerado: Resultados/JoaoLoss/completo/result_compilation.txt.
+ - Copiando os arquivos objetos do professor para cada subpasta do Resultado do JoaoLoss:
+ - Copiando o Gabarito-obj/data.o para a pasta Resultados/JoaoLoss/main
+ - Copiando o Gabarito-obj/main.o para a pasta Resultados/JoaoLoss/data
+ - Arquivos Compilados: ok!
+
+LINKANDO OS ARQUIVOS COMPILADOS:
+ - Pasta data:
+ - Gerando o binário prog linkando com o(s) arquivo(s) data/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/JoaoLoss/data/result_linking.txt
+ - Pasta main:
+ - Gerando o binário prog linkando com o(s) arquivo(s) main/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/JoaoLoss/main/result_linking.txt
+ - Pasta completo:
+ - Gerando o binário prog linkando com o(s) arquivo(s) completo/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/JoaoLoss/completo/result_linking.txt
+
+EXECUTANDO O VALGRIND EM CADA CASO:
+ - Pasta data / Caso 1:
+ - Resultado para o saida.txt: Ok!
+ - Pasta data / Caso 2:
+ - Resultado para o saida.txt: Ok!
+ - Pasta data / Caso 3:
+ - Resultado para o saida.txt: Ok!
+ - Pasta data / Caso 4:
+ - Resultado para o saida.txt: Ok!
+ - Pasta main / Caso 1:
+ - Resultado para o saida.txt: Ok!
+ - Pasta main / Caso 2:
+ - Resultado para o saida.txt: Ok!
+ - Pasta main / Caso 3:
+ - Resultado para o saida.txt: Ok!
+ - Pasta main / Caso 4:
+ - Resultado para o saida.txt: Ok!
+ - Pasta completo / Caso 1:
+ - Resultado para o saida.txt: Ok!
+ - Pasta completo / Caso 2:
+ - Resultado para o saida.txt: Ok!
+ - Pasta completo / Caso 3:
+ - Resultado para o saida.txt: Ok!
+ - Pasta completo / Caso 4:
+ - Resultado para o saida.txt: Ok!
+
+#######################################
+RESULTADOS FINAIS
+#######################################
+
+----------------------------------------------------------------------------
+Nome 0: JoaoLoss
+ - Arquivos Corretos: 3 de 3 / Nota 10.00
+ - Compilações Corretas: 6 de 6 / Nota 10.00
+ - Linkagens Corretas: 3 de 3 / Nota 10.00
+ - Resultados Corretos data: 4 de 4 / Nota 10.00
+ - Resultados Corretos main: 4 de 4 / Nota 10.00
+ - Resultados Corretos completo: 4 de 4 / Nota 10.00
+ - Soma das notas do JoaoLoss: 60.000
+ - Campos Considerados: 6
+ - Média do JoaoLoss: 10.00
+
+----------------------------------------------------------------------------
+
+Arquivo CSV Resultado.csv com os resultados finais foi gerado na pasta raíz!
+
+
