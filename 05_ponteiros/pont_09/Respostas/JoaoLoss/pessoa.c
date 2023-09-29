@@ -20,8 +20,10 @@ tPessoa CriaPessoa() {
  * @param pessoa Ponteiro para a pessoa a ser lida.
  */
 void LePessoa(tPessoa *pessoa) {
-    *pessoa = CriaPessoa();
-    scanf("%s", (*pessoa).nome);
+    scanf("%[^\n]", (*pessoa).nome);
+    scanf("%*[^\n]");
+    scanf("%*c");
+    return;
 }
 
 /**
@@ -30,7 +32,7 @@ void LePessoa(tPessoa *pessoa) {
  * @param pessoa Ponteiro para a pessoa a ser impressa.
  */
 void ImprimePessoa(tPessoa *pessoa) {
-    if((*pessoa).pai == NULL || (*pessoa).mae == NULL) {
+    if((*pessoa).pai == NULL && (*pessoa).mae == NULL) {
         return;
     }
 
@@ -41,6 +43,8 @@ void ImprimePessoa(tPessoa *pessoa) {
 
     if((*pessoa).mae == NULL) printf("MAE: NAO INFORMADO\n");
     else printf("MAE: %s\n", (*((*pessoa).mae)).nome);
+
+    printf("\n");
 
     return;
 }
@@ -54,11 +58,14 @@ void ImprimePessoa(tPessoa *pessoa) {
 void AssociaFamiliasGruposPessoas(tPessoa *pessoas) {
     int qtdAcoes;
     scanf("%d", &qtdAcoes);
+    scanf("%*[^\n]");
+    scanf("%*c");
 
     int idMae, idPai, idFilho;
     for(int i = 0; i < qtdAcoes; i++) {
         scanf("mae: %d, pai: %d, filho: %d", &idMae, &idPai, &idFilho);
-        scanf("%*[^m]");
+        scanf("%*[^\n]");
+        scanf("%*c");
         if(idPai != -1) pessoas[idFilho].pai = (pessoas + idPai);
         if(idMae != -1) pessoas[idFilho].mae = (pessoas + idMae);
     }
