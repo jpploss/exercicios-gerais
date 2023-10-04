@@ -19,6 +19,6 @@ typedef void (*FptrMsg)(char msg[NUM_MAX_MSGS][TAM_MAX_MSG], int * numMsgs);
  * @param tamanhoDisplay Tamanho do display.
  * @param tempoFim Tempo de duração da rolagem.
  */
-void RolaMsg(FptrMsg FuncMsg, int tamanhoDisplay, int tempoFim);
+void RolaMsg(int tamanhoDisplay, int tempoFim);
 
 #endif
