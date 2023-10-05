@@ -11,6 +11,6 @@ void LeMensagens(char msg[NUM_MAX_MSGS][TAM_MAX_MSG], int * numMsgs) {
 }
 
 int main() {
-    RolaMsg(LeMensagens, 30, 100);
+    RolaMsg(LeMensagens, 30, 200);
     return 0;
 }

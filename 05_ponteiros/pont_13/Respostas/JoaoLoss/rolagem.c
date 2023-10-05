@@ -47,35 +47,35 @@ void RolaMsg(FptrMsg FuncMsg, int tamanhoDisplay, int tempoFim) {
     }
     painel[tamanhoDisplay] = 0;
     printf("\033[H\033[J");
-    printf("%s", painel);
+    printf("%s\n", painel);
 
     // faz os delocamentos
     for(int i = 0; i < tempoFim; i++) {
-        char letraPassada = painel[0], letraAtual;
-        for(int j = 1; j < tamanhoDisplay; j++) {
-            letraAtual = painel[j];
-            painel[j] = letraPassada;
-            letraPassada = letraAtual;
+        //desloca
+        int proxima;
+        for(int j = 0; j < tamanhoDisplay; j++) {
+            proxima = j + 1;
+            painel[j] = painel[proxima];
         }
-        if(*(*(mensagens + apontaMsg) + letra) == 0) { // se chegou no fim de uma palavra
-            if(apontaMsg == (qtdMsg - 1)) { // se está no fim da última mensagem o apontaMsg deve apontar para o início
+
+        // coloca a próxima letra no final do painel
+        if(mensagens[apontaMsg][letra] == 0) {
+            if(apontaMsg == qtdMsg - 1) {
                 apontaMsg = 0;
-            } else { // se não, deve apontar para a próxima mensagem
-                apontaMsg++;
-            }
+            } else apontaMsg++;
             letra = 0;
-            painel[0] = ' ';
-            continue;
+            painel[29] = ' ';
+        } else {
+            painel[29] = mensagens[apontaMsg][letra];
+            letra++;
         }
-        painel[0] = *(*(mensagens + apontaMsg) + letra);
-        letra++;
 
         // faz um delay
-        for(int d = 0; d < 100000; d++);
+        for(int d = 0; d < 150000000; d++);
 
         // limpa o terminal e imprime o novo conteúdo do painel
         printf("\033[H\033[J");
-        printf("%s", painel);
+        printf("%s\n", painel);
     }
 
     
