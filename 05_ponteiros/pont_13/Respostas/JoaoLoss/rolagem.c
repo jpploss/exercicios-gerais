@@ -19,6 +19,7 @@ typedef void (*FptrMsg)(char msg[NUM_MAX_MSGS][TAM_MAX_MSG], int * numMsgs);
  */
 void RolaMsg(FptrMsg FuncMsg, int tamanhoDisplay, int tempoFim) {
     int qtdMsg;
+    printf("Digite quantas mensagens você deseja: ");
     scanf("%d", &qtdMsg);
     scanf("%*[^\n]");
     scanf("%*c");
@@ -64,22 +65,18 @@ void RolaMsg(FptrMsg FuncMsg, int tamanhoDisplay, int tempoFim) {
                 apontaMsg = 0;
             } else apontaMsg++;
             letra = 0;
-            painel[29] = ' ';
+            painel[tamanhoDisplay - 1] = ' ';
         } else {
-            painel[29] = mensagens[apontaMsg][letra];
+            painel[tamanhoDisplay - 1] = mensagens[apontaMsg][letra];
             letra++;
         }
 
         // faz um delay
-        for(int d = 0; d < 150000000; d++);
+        for(int d = 0; d < 120000000; d++);
 
         // limpa o terminal e imprime o novo conteúdo do painel
         printf("\033[H\033[J");
         printf("%s\n", painel);
     }
-
-    
-
-    // // só para dar um delay
-    // for(int x = 0; x < 10000; x++);
+    return;
 }
