@@ -27,6 +27,7 @@ tAluno* CriaAluno() {
  * @param aluno Ponteiro para estrutura do tipo tAluno a ser apagada.
  */
 void ApagaAluno(tAluno *aluno) {
+    //free(aluno->nome);
     free(aluno);
     return;
 }
@@ -40,9 +41,26 @@ void ApagaAluno(tAluno *aluno) {
 void LeAluno(tAluno *aluno) {
     scanf("%*[^A-Za-z]");
 
-    char nome[30];
-    scanf("%s", nome);
-    aluno->nome = nome;
+    char nomeAux[40];
+    scanf("%s", nomeAux);
+    printf("%s\n", nomeAux);
+    aluno->nome = nomeAux;
+
+    /*int tamanho = 0, letra;
+
+    letra = getchar();
+    while(letra != '\n' && letra != EOF) {
+        tamanho++;
+        aluno->nome = realloc((*aluno).nome, tamanho);
+        *((aluno->nome) + tamanho - 1) = letra;
+        letra = getchar();
+    }
+    tamanho++;
+    aluno->nome = realloc((*aluno).nome, tamanho);
+    *((aluno->nome) + tamanho - 1) = '\0';*/
+
+   
+
     scanf("%d %d %d %d", &(aluno->matricula), &(aluno->n1), &(aluno->n2), &(aluno->n3));
     return;
 }
@@ -89,5 +107,6 @@ int VerificaAprovacao(tAluno* aluno) {
  * @param aluno Ponteiro para aluno a ser impresso.
  */
 void ImprimeAluno(tAluno* aluno) {
-    printf("%s", aluno->nome);
+    printf("%s\n", aluno->nome);
+    return;
 }

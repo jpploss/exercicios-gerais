@@ -32,7 +32,6 @@ int main() {
     for(int i = 0; i < qtd; i++) {
         if(VerificaAprovacao(*(alunos + i))) {
             ImprimeAluno(*(alunos + i));
-            printf("\n");
         }
         ApagaAluno(*(alunos + i));
     }
