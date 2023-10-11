@@ -1,0 +1,374 @@
+Rodando o script do Aluno - Arquivos header necessários do professor existem na pasta Includes
+ - Arquivos objetos necessários do professor existem na pasta Gabarito-obj.
+#######################################
+ALUNO: JoaoLoss
+#######################################
+CRIANDO O DIRETÓRIO DE RESULTADO PARA JoaoLoss:
+ - Diretório Resultados/JoaoLoss criado com sucesso!
+ - Diretório Resultados/JoaoLoss/empresa criado com sucesso!
+ - Diretório Resultados/JoaoLoss/funcionario criado com sucesso!
+ - Diretório Resultados/JoaoLoss/main criado com sucesso!
+ - Diretório Resultados/JoaoLoss/completo criado com sucesso!
+ - Arquivos criados: ok!
+
+CHECKANDO OS ARQUIVOS DO ALUNO:
+ - Arquivo esperado 'Respostas/JoaoLoss/empresa.c' encontrado!
+ - Arquivo esperado 'Respostas/JoaoLoss/empresa.h' encontrado!
+ - Arquivo esperado 'Respostas/JoaoLoss/funcionario.c' encontrado!
+ - Arquivo esperado 'Respostas/JoaoLoss/funcionario.h' encontrado!
+ - Arquivo esperado 'Respostas/JoaoLoss/main.c' encontrado!
+ - Arquivos esperados enviados: Ok!
+
+COPIANDO OS ARQUIVOS PARA A PASTA DE RESULTADO DO ALUNO:
+ - Pasta empresa:
+ - Copiando os Casos de teste para a pasta Resultados/JoaoLoss/empresa
+ - Copiando os 'Respostas/JoaoLoss/*.h' do aluno para a pasta Resultados/JoaoLoss/empresa
+ - Copiando os 'Includes/*.h' do professor para a pasta Resultados/JoaoLoss/empresa
+ - Copiando os 'Respostas/JoaoLoss/*.c' do aluno para a pasta Resultados/JoaoLoss/empresa
+ - Pasta funcionario:
+ - Copiando os Casos de teste para a pasta Resultados/JoaoLoss/funcionario
+ - Copiando os 'Respostas/JoaoLoss/*.h' do aluno para a pasta Resultados/JoaoLoss/funcionario
+ - Copiando os 'Includes/*.h' do professor para a pasta Resultados/JoaoLoss/funcionario
+ - Copiando os 'Respostas/JoaoLoss/*.c' do aluno para a pasta Resultados/JoaoLoss/funcionario
+ - Pasta main:
+ - Copiando os Casos de teste para a pasta Resultados/JoaoLoss/main
+ - Copiando os 'Respostas/JoaoLoss/*.h' do aluno para a pasta Resultados/JoaoLoss/main
+ - Copiando os 'Includes/*.h' do professor para a pasta Resultados/JoaoLoss/main
+ - Copiando os 'Respostas/JoaoLoss/*.c' do aluno para a pasta Resultados/JoaoLoss/main
+ - Pasta completo:
+ - Copiando os Casos de teste para a pasta Resultados/JoaoLoss/completo
+ - Copiando os 'Respostas/JoaoLoss/*.h' do aluno para a pasta Resultados/JoaoLoss/completo
+ - Copiando os 'Respostas/JoaoLoss/*.c' do aluno para a pasta Resultados/JoaoLoss/completo
+ - Arquivos copiados: ok!
+
+COMPILANDO OS ARQUIVOS NA PASTA DE RESULTADO DO ALUNO:
+ - Pasta empresa:
+ - Compilando o arquivo empresa.c do aluno, gerando o empresa.o
+ - Compilando o arquivo funcionario.c do aluno, gerando o funcionario.o
+ - Compilando o arquivo main.c do aluno, gerando o main.o
+ - Arquivo de output gerado: Resultados/JoaoLoss/empresa/result_compilation.txt.
+ - Pasta funcionario:
+ - Compilando o arquivo empresa.c do aluno, gerando o empresa.o
+ - Compilando o arquivo funcionario.c do aluno, gerando o funcionario.o
+ - Compilando o arquivo main.c do aluno, gerando o main.o
+ - Arquivo de output gerado: Resultados/JoaoLoss/funcionario/result_compilation.txt.
+ - Pasta main:
+ - Compilando o arquivo empresa.c do aluno, gerando o empresa.o
+ - Compilando o arquivo funcionario.c do aluno, gerando o funcionario.o
+ - Compilando o arquivo main.c do aluno, gerando o main.o
+ - Arquivo de output gerado: Resultados/JoaoLoss/main/result_compilation.txt.
+ - Pasta completo:
+ - Compilando o arquivo empresa.c do aluno, gerando o empresa.o
+ - Compilando o arquivo funcionario.c do aluno, gerando o funcionario.o
+ - Compilando o arquivo main.c do aluno, gerando o main.o
+ - Arquivo de output gerado: Resultados/JoaoLoss/completo/result_compilation.txt.
+ - Copiando os arquivos objetos do professor para cada subpasta do Resultado do JoaoLoss:
+ - Copiando o Gabarito-obj/empresa.o para a pasta Resultados/JoaoLoss/funcionario
+ - Copiando o Gabarito-obj/empresa.o para a pasta Resultados/JoaoLoss/main
+ - Copiando o Gabarito-obj/funcionario.o para a pasta Resultados/JoaoLoss/empresa
+ - Copiando o Gabarito-obj/funcionario.o para a pasta Resultados/JoaoLoss/main
+ - Copiando o Gabarito-obj/main.o para a pasta Resultados/JoaoLoss/empresa
+ - Copiando o Gabarito-obj/main.o para a pasta Resultados/JoaoLoss/funcionario
+ - Arquivos Compilados: ok!
+
+LINKANDO OS ARQUIVOS COMPILADOS:
+ - Pasta empresa:
+ - Gerando o binário prog linkando com o(s) arquivo(s) empresa/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/JoaoLoss/empresa/result_linking.txt
+ - Pasta funcionario:
+ - Gerando o binário prog linkando com o(s) arquivo(s) funcionario/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/JoaoLoss/funcionario/result_linking.txt
+ - Pasta main:
+ - Gerando o binário prog linkando com o(s) arquivo(s) main/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/JoaoLoss/main/result_linking.txt
+ - Pasta completo:
+ - Gerando o binário prog linkando com o(s) arquivo(s) completo/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/JoaoLoss/completo/result_linking.txt
+
+EXECUTANDO O VALGRIND EM CADA CASO:
+ - Pasta empresa / Caso 1:
+ - Arquivo de output gerado: Resultados/JoaoLoss/empresa/Casos/1/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 10, frees: 9, errors: 1.
+ - Resultado para o saida.txt: Ok!
+ - Pasta empresa / Caso 2:
+ - Arquivo de output gerado: Resultados/JoaoLoss/empresa/Casos/2/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 22, frees: 21, errors: 1.
+ - Resultado para o saida.txt: Ok!
+ - Pasta empresa / Caso 3:
+ - Arquivo de output gerado: Resultados/JoaoLoss/empresa/Casos/3/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 29, frees: 23, errors: 1.
+ - Resultado para o saida.txt: Ok!
+ - Pasta empresa / Caso 4:
+ - Arquivo de output gerado: Resultados/JoaoLoss/empresa/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 29, frees: 29, errors: 0.
+ - Resultado para o saida.txt: Ok!
+ - Pasta empresa / Caso 5:
+ - Arquivo de output gerado: Resultados/JoaoLoss/empresa/Casos/5/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 36, frees: 35, errors: 1.
+ - Resultado para o saida.txt: Ok!
+ - Pasta funcionario / Caso 1:
+ - Arquivo de output gerado: Resultados/JoaoLoss/funcionario/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 8, frees: 8, errors: 0.
+ - Resultado para o saida.txt: Ok!
+ - Pasta funcionario / Caso 2:
+ - Arquivo de output gerado: Resultados/JoaoLoss/funcionario/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 15, frees: 15, errors: 0.
+ - Resultado para o saida.txt: Ok!
+ - Pasta funcionario / Caso 3:
+ - Arquivo de output gerado: Resultados/JoaoLoss/funcionario/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 20, frees: 20, errors: 0.
+ - Resultado para o saida.txt: Ok!
+ - Pasta funcionario / Caso 4:
+ - Arquivo de output gerado: Resultados/JoaoLoss/funcionario/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 21, frees: 21, errors: 0.
+ - Resultado para o saida.txt: Ok!
+ - Pasta funcionario / Caso 5:
+ - Arquivo de output gerado: Resultados/JoaoLoss/funcionario/Casos/5/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 25, frees: 25, errors: 0.
+ - Resultado para o saida.txt: Ok!
+ - Pasta main / Caso 1:
+ - Arquivo de output gerado: Resultados/JoaoLoss/main/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 8, frees: 8, errors: 0.
+ - Resultado para o saida.txt: Ok!
+ - Pasta main / Caso 2:
+ - Arquivo de output gerado: Resultados/JoaoLoss/main/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 15, frees: 15, errors: 0.
+ - Resultado para o saida.txt: Ok!
+ - Pasta main / Caso 3:
+ - Arquivo de output gerado: Resultados/JoaoLoss/main/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 20, frees: 20, errors: 0.
+ - Resultado para o saida.txt: Ok!
+ - Pasta main / Caso 4:
+ - Arquivo de output gerado: Resultados/JoaoLoss/main/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 21, frees: 21, errors: 0.
+ - Resultado para o saida.txt: Ok!
+ - Pasta main / Caso 5:
+ - Arquivo de output gerado: Resultados/JoaoLoss/main/Casos/5/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 25, frees: 25, errors: 0.
+ - Resultado para o saida.txt: Ok!
+ - Pasta completo / Caso 1:
+ - Arquivo de output gerado: Resultados/JoaoLoss/completo/Casos/1/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 10, frees: 9, errors: 1.
+ - Resultado para o saida.txt: Ok!
+ - Pasta completo / Caso 2:
+ - Arquivo de output gerado: Resultados/JoaoLoss/completo/Casos/2/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 22, frees: 21, errors: 1.
+ - Resultado para o saida.txt: Ok!
+ - Pasta completo / Caso 3:
+ - Arquivo de output gerado: Resultados/JoaoLoss/completo/Casos/3/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 29, frees: 23, errors: 1.
+ - Resultado para o saida.txt: Ok!
+ - Pasta completo / Caso 4:
+ - Arquivo de output gerado: Resultados/JoaoLoss/completo/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 29, frees: 29, errors: 0.
+ - Resultado para o saida.txt: Ok!
+ - Pasta completo / Caso 5:
+ - Arquivo de output gerado: Resultados/JoaoLoss/completo/Casos/5/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 36, frees: 35, errors: 1.
+ - Resultado para o saida.txt: Ok!
+
+#######################################
+ALUNO: JoaoLoss/.vscode
+#######################################
+CRIANDO O DIRETÓRIO DE RESULTADO PARA JoaoLoss/.vscode:
+ - Diretório Resultados/JoaoLoss/.vscode criado com sucesso!
+ - Diretório Resultados/JoaoLoss/.vscode/empresa criado com sucesso!
+ - Diretório Resultados/JoaoLoss/.vscode/funcionario criado com sucesso!
+ - Diretório Resultados/JoaoLoss/.vscode/main criado com sucesso!
+ - Diretório Resultados/JoaoLoss/.vscode/completo criado com sucesso!
+ - Arquivos criados: ok!
+
+CHECKANDO OS ARQUIVOS DO ALUNO:
+ - Arquivo esperado 'Respostas/JoaoLoss/.vscode/empresa.c' não encontrado!
+ - Arquivo esperado 'Respostas/JoaoLoss/.vscode/empresa.h' não encontrado!
+ - Arquivo esperado 'Respostas/JoaoLoss/.vscode/funcionario.c' não encontrado!
+ - Arquivo esperado 'Respostas/JoaoLoss/.vscode/funcionario.h' não encontrado!
+ - Arquivo esperado 'Respostas/JoaoLoss/.vscode/main.c' não encontrado!
+ - Arquivos esperados enviados: Faltando!
+
+COPIANDO OS ARQUIVOS PARA A PASTA DE RESULTADO DO ALUNO:
+ - Pasta empresa:
+ - Copiando os Casos de teste para a pasta Resultados/JoaoLoss/.vscode/empresa
+ - Copiando os 'Respostas/JoaoLoss/.vscode/*.c' do aluno para a pasta Resultados/JoaoLoss/.vscode/empresa
+ - Pasta funcionario:
+ - Copiando os Casos de teste para a pasta Resultados/JoaoLoss/.vscode/funcionario
+ - Copiando os 'Respostas/JoaoLoss/.vscode/*.c' do aluno para a pasta Resultados/JoaoLoss/.vscode/funcionario
+ - Pasta main:
+ - Copiando os Casos de teste para a pasta Resultados/JoaoLoss/.vscode/main
+ - Copiando os 'Respostas/JoaoLoss/.vscode/*.c' do aluno para a pasta Resultados/JoaoLoss/.vscode/main
+ - Pasta completo:
+ - Copiando os Casos de teste para a pasta Resultados/JoaoLoss/.vscode/completo
+ - Copiando os 'Respostas/JoaoLoss/.vscode/*.c' do aluno para a pasta Resultados/JoaoLoss/.vscode/completo
+ - Arquivos copiados: ok!
+
+COMPILANDO OS ARQUIVOS NA PASTA DE RESULTADO DO ALUNO:
+ - Pasta empresa:
+ - Compilando o arquivo empresa.c do aluno, gerando o empresa.o
+ - Erro de compilação! Verifique se o arquivo Resultados/JoaoLoss/.vscode/empresa/empresa.c está correto.
+ - Compilando o arquivo funcionario.c do aluno, gerando o funcionario.o
+ - Erro de compilação! Verifique se o arquivo Resultados/JoaoLoss/.vscode/empresa/funcionario.c está correto.
+ - Compilando o arquivo main.c do aluno, gerando o main.o
+ - Erro de compilação! Verifique se o arquivo Resultados/JoaoLoss/.vscode/empresa/main.c está correto.
+ - Arquivo de output gerado: Resultados/JoaoLoss/.vscode/empresa/result_compilation.txt.
+ - Pasta funcionario:
+ - Compilando o arquivo empresa.c do aluno, gerando o empresa.o
+ - Erro de compilação! Verifique se o arquivo Resultados/JoaoLoss/.vscode/funcionario/empresa.c está correto.
+ - Compilando o arquivo funcionario.c do aluno, gerando o funcionario.o
+ - Erro de compilação! Verifique se o arquivo Resultados/JoaoLoss/.vscode/funcionario/funcionario.c está correto.
+ - Compilando o arquivo main.c do aluno, gerando o main.o
+ - Erro de compilação! Verifique se o arquivo Resultados/JoaoLoss/.vscode/funcionario/main.c está correto.
+ - Arquivo de output gerado: Resultados/JoaoLoss/.vscode/funcionario/result_compilation.txt.
+ - Pasta main:
+ - Compilando o arquivo empresa.c do aluno, gerando o empresa.o
+ - Erro de compilação! Verifique se o arquivo Resultados/JoaoLoss/.vscode/main/empresa.c está correto.
+ - Compilando o arquivo funcionario.c do aluno, gerando o funcionario.o
+ - Erro de compilação! Verifique se o arquivo Resultados/JoaoLoss/.vscode/main/funcionario.c está correto.
+ - Compilando o arquivo main.c do aluno, gerando o main.o
+ - Erro de compilação! Verifique se o arquivo Resultados/JoaoLoss/.vscode/main/main.c está correto.
+ - Arquivo de output gerado: Resultados/JoaoLoss/.vscode/main/result_compilation.txt.
+ - Pasta completo:
+ - Compilando o arquivo empresa.c do aluno, gerando o empresa.o
+ - Erro de compilação! Verifique se o arquivo Resultados/JoaoLoss/.vscode/completo/empresa.c está correto.
+ - Compilando o arquivo funcionario.c do aluno, gerando o funcionario.o
+ - Erro de compilação! Verifique se o arquivo Resultados/JoaoLoss/.vscode/completo/funcionario.c está correto.
+ - Compilando o arquivo main.c do aluno, gerando o main.o
+ - Erro de compilação! Verifique se o arquivo Resultados/JoaoLoss/.vscode/completo/main.c está correto.
+ - Arquivo de output gerado: Resultados/JoaoLoss/.vscode/completo/result_compilation.txt.
+ - Arquivos Compilados: Erro!: 12 arquivos com erros de compilacao.
+ - Copiando os arquivos objetos do professor para cada subpasta do Resultado do JoaoLoss/.vscode:
+ - Copiando o Gabarito-obj/empresa.o para a pasta Resultados/JoaoLoss/.vscode/funcionario
+ - Copiando o Gabarito-obj/empresa.o para a pasta Resultados/JoaoLoss/.vscode/main
+ - Copiando o Gabarito-obj/funcionario.o para a pasta Resultados/JoaoLoss/.vscode/empresa
+ - Copiando o Gabarito-obj/funcionario.o para a pasta Resultados/JoaoLoss/.vscode/main
+ - Copiando o Gabarito-obj/main.o para a pasta Resultados/JoaoLoss/.vscode/empresa
+ - Copiando o Gabarito-obj/main.o para a pasta Resultados/JoaoLoss/.vscode/funcionario
+ - Arquivos Compilados: ok!
+
+LINKANDO OS ARQUIVOS COMPILADOS:
+ - Pasta empresa:
+ - Gerando o binário prog linkando com o(s) arquivo(s) empresa/*.o
+ - Arquivos Linkados: Erro! Binário prog não gerado.
+ - Arquivo de output gerado: Resultados/JoaoLoss/.vscode/empresa/result_linking.txt
+ - Pasta funcionario:
+ - Gerando o binário prog linkando com o(s) arquivo(s) funcionario/*.o
+ - Arquivos Linkados: Erro! Binário prog não gerado.
+ - Arquivo de output gerado: Resultados/JoaoLoss/.vscode/funcionario/result_linking.txt
+ - Pasta main:
+ - Gerando o binário prog linkando com o(s) arquivo(s) main/*.o
+ - Arquivos Linkados: Erro! Binário prog não gerado.
+ - Arquivo de output gerado: Resultados/JoaoLoss/.vscode/main/result_linking.txt
+ - Pasta completo:
+ - Gerando o binário prog linkando com o(s) arquivo(s) completo/*.o
+ - Arquivos Linkados: Erro! Binário prog não gerado.
+ - Arquivo de output gerado: Resultados/JoaoLoss/.vscode/completo/result_linking.txt
+ - Arquivos Linkados: Erro! 4 arquivos com erros de linkagem.
+
+EXECUTANDO O VALGRIND EM CADA CASO:
+ - Pasta empresa / Caso 1:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta empresa / Caso 2:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta empresa / Caso 3:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta empresa / Caso 4:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta empresa / Caso 5:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta funcionario / Caso 1:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta funcionario / Caso 2:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta funcionario / Caso 3:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta funcionario / Caso 4:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta funcionario / Caso 5:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta main / Caso 1:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta main / Caso 2:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta main / Caso 3:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta main / Caso 4:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta main / Caso 5:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta completo / Caso 1:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta completo / Caso 2:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta completo / Caso 3:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta completo / Caso 4:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta completo / Caso 5:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto!
+
+#######################################
+RESULTADOS FINAIS
+#######################################
+
+----------------------------------------------------------------------------
+Nome 0: JoaoLoss/.vscode
+ - Arquivos Corretos: 0 de 5 / Nota 0.00
+ - Compilações Corretas: 0 de 12 / Nota 0.00
+ - Linkagens Corretas: 0 de 4 / Nota 0.00
+ - Resultados Corretos empresa: 0 de 5 / Nota 0.00
+ - Valgrinds Corretos empresa: 0 de 5 / Nota 0.00
+ - Resultados Corretos funcionario: 0 de 5 / Nota 0.00
+ - Valgrinds Corretos funcionario: 0 de 5 / Nota 0.00
+ - Resultados Corretos main: 0 de 5 / Nota 0.00
+ - Valgrinds Corretos main: 0 de 5 / Nota 0.00
+ - Resultados Corretos completo: 0 de 5 / Nota 0.00
+ - Valgrinds Corretos completo: 0 de 5 / Nota 0.00
+ - Soma das notas do JoaoLoss/.vscode: 0
+ - Campos Considerados: 11
+ - Média do JoaoLoss/.vscode: 0.00
+
+----------------------------------------------------------------------------
+Nome 1: JoaoLoss
+ - Arquivos Corretos: 5 de 5 / Nota 10.00
+ - Compilações Corretas: 12 de 12 / Nota 10.00
+ - Linkagens Corretas: 4 de 4 / Nota 10.00
+ - Resultados Corretos empresa: 5 de 5 / Nota 10.00
+ - Valgrinds Corretos empresa: 1 de 5 / Nota 2.00
+ - Resultados Corretos funcionario: 5 de 5 / Nota 10.00
+ - Valgrinds Corretos funcionario: 5 de 5 / Nota 10.00
+ - Resultados Corretos main: 5 de 5 / Nota 10.00
+ - Valgrinds Corretos main: 5 de 5 / Nota 10.00
+ - Resultados Corretos completo: 5 de 5 / Nota 10.00
+ - Valgrinds Corretos completo: 1 de 5 / Nota 2.00
+ - Soma das notas do JoaoLoss: 94.000
+ - Campos Considerados: 11
+ - Média do JoaoLoss: 8.54
+
+----------------------------------------------------------------------------
+
+Arquivo CSV Resultado.csv com os resultados finais foi gerado na pasta raíz!
+
+

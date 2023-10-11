@@ -46,9 +46,7 @@ void LeAluno(tAluno *aluno) {
     printf("%s\n", nomeAux);
     aluno->nome = nomeAux;*/
 
-    int tamanho = 0, letra;
-
-    letra = getchar();
+    int tamanho = 0, letra = getchar();
     while(letra != '\n' && letra != EOF) {
         tamanho++;
         aluno->nome = realloc((*aluno).nome, tamanho);
