@@ -6,7 +6,8 @@ int main() {
     int qtd;
     scanf("%d", &qtd);
 
-    tAluno** alunos = (tAluno**) malloc(sizeof(tAluno*)*qtd);
+    tAluno** alunos = (tAluno**) malloc(sizeof(tAluno*) * qtd); // vetor de ponteiros para tAluno de tamanho qtd
+
     if(alunos == NULL) {
         printf("Problemas na alocação de memória para o vetor de ponteiros para alunos.\n");
         exit(1);
