@@ -41,12 +41,12 @@ void ApagaAluno(tAluno *aluno) {
 void LeAluno(tAluno *aluno) {
     scanf("%*[^A-Za-z]");
 
-    char nomeAux[40];
+    /*char nomeAux[40];
     scanf("%s", nomeAux);
     printf("%s\n", nomeAux);
-    aluno->nome = nomeAux;
+    aluno->nome = nomeAux;*/
 
-    /*int tamanho = 0, letra;
+    int tamanho = 0, letra;
 
     letra = getchar();
     while(letra != '\n' && letra != EOF) {
@@ -57,7 +57,7 @@ void LeAluno(tAluno *aluno) {
     }
     tamanho++;
     aluno->nome = realloc((*aluno).nome, tamanho);
-    *((aluno->nome) + tamanho - 1) = '\0';*/
+    *((aluno->nome) + tamanho - 1) = '\0';
 
    
 
