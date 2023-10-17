@@ -44,6 +44,8 @@ void LeEmpresa(tEmpresa* empresa) {
         }
         if(!jaCadastrado) {
             ContrataFuncionarioEmpresa(empresa, funcionarioAux);
+        } else {
+            free(funcionarioAux);
         }
     }
 }

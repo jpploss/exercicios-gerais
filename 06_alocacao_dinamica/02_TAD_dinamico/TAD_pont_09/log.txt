@@ -92,15 +92,15 @@ LINKANDO OS ARQUIVOS COMPILADOS:
 EXECUTANDO O VALGRIND EM CADA CASO:
  - Pasta empresa / Caso 1:
  - Arquivo de output gerado: Resultados/JoaoLoss/empresa/Casos/1/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 10, frees: 9, errors: 1.
+ - Valgrind: Ok! allocs: 10, frees: 10, errors: 0.
  - Resultado para o saida.txt: Ok!
  - Pasta empresa / Caso 2:
  - Arquivo de output gerado: Resultados/JoaoLoss/empresa/Casos/2/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 22, frees: 21, errors: 1.
+ - Valgrind: Ok! allocs: 22, frees: 22, errors: 0.
  - Resultado para o saida.txt: Ok!
  - Pasta empresa / Caso 3:
  - Arquivo de output gerado: Resultados/JoaoLoss/empresa/Casos/3/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 29, frees: 23, errors: 1.
+ - Valgrind: Ok! allocs: 29, frees: 29, errors: 0.
  - Resultado para o saida.txt: Ok!
  - Pasta empresa / Caso 4:
  - Arquivo de output gerado: Resultados/JoaoLoss/empresa/Casos/4/result_valgrind.txt.
@@ -108,7 +108,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o saida.txt: Ok!
  - Pasta empresa / Caso 5:
  - Arquivo de output gerado: Resultados/JoaoLoss/empresa/Casos/5/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 36, frees: 35, errors: 1.
+ - Valgrind: Ok! allocs: 36, frees: 36, errors: 0.
  - Resultado para o saida.txt: Ok!
  - Pasta funcionario / Caso 1:
  - Arquivo de output gerado: Resultados/JoaoLoss/funcionario/Casos/1/result_valgrind.txt.
@@ -152,15 +152,15 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o saida.txt: Ok!
  - Pasta completo / Caso 1:
  - Arquivo de output gerado: Resultados/JoaoLoss/completo/Casos/1/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 10, frees: 9, errors: 1.
+ - Valgrind: Ok! allocs: 10, frees: 10, errors: 0.
  - Resultado para o saida.txt: Ok!
  - Pasta completo / Caso 2:
  - Arquivo de output gerado: Resultados/JoaoLoss/completo/Casos/2/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 22, frees: 21, errors: 1.
+ - Valgrind: Ok! allocs: 22, frees: 22, errors: 0.
  - Resultado para o saida.txt: Ok!
  - Pasta completo / Caso 3:
  - Arquivo de output gerado: Resultados/JoaoLoss/completo/Casos/3/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 29, frees: 23, errors: 1.
+ - Valgrind: Ok! allocs: 29, frees: 29, errors: 0.
  - Resultado para o saida.txt: Ok!
  - Pasta completo / Caso 4:
  - Arquivo de output gerado: Resultados/JoaoLoss/completo/Casos/4/result_valgrind.txt.
@@ -168,7 +168,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o saida.txt: Ok!
  - Pasta completo / Caso 5:
  - Arquivo de output gerado: Resultados/JoaoLoss/completo/Casos/5/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 36, frees: 35, errors: 1.
+ - Valgrind: Ok! allocs: 36, frees: 36, errors: 0.
  - Resultado para o saida.txt: Ok!
 
 #######################################
@@ -356,16 +356,16 @@ Nome 1: JoaoLoss
  - Compilações Corretas: 12 de 12 / Nota 10.00
  - Linkagens Corretas: 4 de 4 / Nota 10.00
  - Resultados Corretos empresa: 5 de 5 / Nota 10.00
- - Valgrinds Corretos empresa: 1 de 5 / Nota 2.00
+ - Valgrinds Corretos empresa: 5 de 5 / Nota 10.00
  - Resultados Corretos funcionario: 5 de 5 / Nota 10.00
  - Valgrinds Corretos funcionario: 5 de 5 / Nota 10.00
  - Resultados Corretos main: 5 de 5 / Nota 10.00
  - Valgrinds Corretos main: 5 de 5 / Nota 10.00
  - Resultados Corretos completo: 5 de 5 / Nota 10.00
- - Valgrinds Corretos completo: 1 de 5 / Nota 2.00
- - Soma das notas do JoaoLoss: 94.000
+ - Valgrinds Corretos completo: 5 de 5 / Nota 10.00
+ - Soma das notas do JoaoLoss: 110.000
  - Campos Considerados: 11
- - Média do JoaoLoss: 8.54
+ - Média do JoaoLoss: 10.00
 
 ----------------------------------------------------------------------------
 
