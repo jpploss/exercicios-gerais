@@ -1,0 +1,128 @@
+Jogo de adivinhação
+Forneca um numero no intervalo entre 1 e 10000:
+Forneca um numero no intervalo entre 1 e 10000:
+Forneca um intervalo de numeros naturais:
+Voce tem direito a 10 tentativas
+Tentativa 1:
+Alta
+Tentativa 2:
+Alta
+Tentativa 3:
+Alta
+Tentativa 4:
+Alta
+Tentativa 5:
+Alta
+Tentativa 6:
+Alta
+Tentativa 7:
+Alta
+Tentativa 8:
+Alta
+Tentativa 9:
+Alta
+Tentativa 10:
+Alta
+Voce perdeu! O numero escolhido foi 5
+Deseja continuar a jogar (s/n):
+Voce deve digitar s ou n!
+Deseja continuar a jogar (s/n):
+Voce deve digitar s ou n!
+Deseja continuar a jogar (s/n):
+Voce deve digitar s ou n!
+Deseja continuar a jogar (s/n):
+Voce deve digitar s ou n!
+Deseja continuar a jogar (s/n):
+Voce deve digitar s ou n!
+Deseja continuar a jogar (s/n):
+Voce deve digitar s ou n!
+Deseja continuar a jogar (s/n):
+Voce deve digitar s ou n!
+Deseja continuar a jogar (s/n):
+Voce deve digitar s ou n!
+Deseja continuar a jogar (s/n):
+Voce deve digitar s ou n!
+Deseja continuar a jogar (s/n):
+Voce deve digitar s ou n!
+Deseja continuar a jogar (s/n):
+Voce deve digitar s ou n!
+Deseja continuar a jogar (s/n):
+Voce deve digitar s ou n!
+Deseja continuar a jogar (s/n):
+Voce deve digitar s ou n!
+Deseja continuar a jogar (s/n):
+Voce deve digitar s ou n!
+Deseja continuar a jogar (s/n):
+Voce deve digitar s ou n!
+Deseja continuar a jogar (s/n):
+Voce deve digitar s ou n!
+Deseja continuar a jogar (s/n):
+Voce deve digitar s ou n!
+Deseja continuar a jogar (s/n):
+Voce deve digitar s ou n!
+Deseja continuar a jogar (s/n):
+Voce deve digitar s ou n!
+Deseja continuar a jogar (s/n):
+Forneca um numero no intervalo entre 1 e 10000:
+Forneca um intervalo de numeros naturais:
+Voce tem direito a 6 tentativas
+Tentativa 1:
+Baixa
+Tentativa 2:
+Baixa
+Tentativa 3:
+Baixa
+Tentativa 4:
+Baixa
+Tentativa 5:
+Baixa
+Tentativa 6:
+Baixa
+Voce perdeu! O numero escolhido foi 28657
+Deseja continuar a jogar (s/n):
+Forneca um numero no intervalo entre 1 e 10000:
+Forneca um intervalo de numeros naturais:
+Voce tem direito a 20 tentativas
+Tentativa 1:
+Alta
+Tentativa 2:
+Alta
+Tentativa 3:
+Alta
+Tentativa 4:
+Alta
+Tentativa 5:
+Alta
+Tentativa 6:
+Alta
+Tentativa 7:
+Alta
+Tentativa 8:
+Alta
+Tentativa 9:
+Alta
+Tentativa 10:
+Alta
+Tentativa 11:
+Alta
+Tentativa 12:
+Alta
+Tentativa 13:
+Alta
+Tentativa 14:
+Alta
+Tentativa 15:
+Alta
+Tentativa 16:
+Alta
+Tentativa 17:
+Alta
+Tentativa 18:
+Alta
+Tentativa 19:
+Alta
+Tentativa 20:
+Alta
+Voce perdeu! O numero escolhido foi 28657
+Deseja continuar a jogar (s/n):
+Obrigado por jogar comigo. Desta vez, voce jogou 3 jogo(s), ganhou 0 jogo(s) e perdeu 3 jogo(s). Ate a proxima!
