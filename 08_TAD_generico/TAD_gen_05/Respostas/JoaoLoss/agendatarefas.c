@@ -10,7 +10,7 @@ typedef void (*Fptr)(void*);
 
 typedef struct tTarefa {
     int prioridade;
-    void* tarefa;
+    void* conteudoDaTarefa;
     Fptr executa;
     Fptr destroi;
 } tTarefa;
@@ -32,11 +32,16 @@ tAgendaTarefas* CriaAgendaDeTarefas(int numElem) {
     tAgendaTarefas* agenda = malloc(sizeof(tAgendaTarefas));
     agenda->tarefas = malloc(sizeof(tTarefa*)*numElem); 
     agenda->numAtualTarefas = 0;
+    agenda->qtdTarefas = numElem;
     return agenda;
 }
 
 void DestroiTarefa(tTarefa* tarefa) {
-    tarefa->destroi(tarefa->tarefa);
+    tarefa->destroi(tarefa->conteudoDaTarefa);
+}
+
+void DesalocaTarefa(tTarefa* tarefa) {
+    free(tarefa);
 }
 
 /**
@@ -49,11 +54,21 @@ void DestroiAgendaDeTarefas(tAgendaTarefas* tar) {
         if(tar->tarefas != NULL) {
             for(int i = 0; i < tar->numAtualTarefas; i++) {
                 DestroiTarefa(tar->tarefas[i]);
+                DesalocaTarefa(tar->tarefas[i]);
             }
             free(tar->tarefas);
         }
         free(tar);
     }
+}
+
+tTarefa* CadastraTarefa(void* tarefaAFazer, int prioridade, Fptr executa, Fptr destroi) {
+    tTarefa* tarefa = malloc(sizeof(tTarefa));
+    tarefa->prioridade = prioridade;
+    tarefa->conteudoDaTarefa = tarefaAFazer;
+    tarefa->executa = executa;
+    tarefa->destroi = destroi;
+    return tarefa;
 }
 
 /**
@@ -69,27 +84,28 @@ void DestroiAgendaDeTarefas(tAgendaTarefas* tar) {
 void CadastraTarefaNaAgenda(tAgendaTarefas* tar, int prioridade, void *tarefa, void (*executa)(void*), void (*destroi)(void*) ) {
     tar->numAtualTarefas += 1;
     tar->tarefas = realloc(tar->tarefas, sizeof(tTarefa*)*(tar->numAtualTarefas));
-    tar->tarefas[tar->numAtualTarefas - 1]->prioridade = prioridade;
-    tar->tarefas[tar->numAtualTarefas - 1]->executa = executa;
-    tar->tarefas[tar->numAtualTarefas - 1]->destroi = destroi;
-    tar->tarefas[tar->numAtualTarefas - 1]->tarefa = tarefa;
+    tar->tarefas[tar->numAtualTarefas - 1] = CadastraTarefa(tarefa, prioridade, executa, destroi);
 }   
 
 void OrdenaTarefas(tTarefa** tarefas, int qtdTarefas) {
     tTarefa* aux;
+    int achouMaior = 0;
     for(int i = 0; i < qtdTarefas; i++) {
         for(int j = i+1; j < qtdTarefas; j++) {
-            if(tarefas[i]->prioridade < tarefas[j]->prioridade) {
-                aux = tarefas[i];
-                tarefas[i] = tarefas[j];
-                tarefas[j] = aux;
+            if(tarefas[j]->prioridade > tarefas[i]->prioridade) {
+                aux = tarefas[j];
+                achouMaior = 1;
             }
+        }
+        if(achouMaior) {
+            achouMaior = 0;
+            tarefas[i] = aux;
         }
     }
 }
 
 void ExcutaTarefa(tTarefa* tarefa) {
-    tarefa->executa(tarefa->tarefa);
+    tarefa->executa(tarefa->conteudoDaTarefa);
 }
 
 /**

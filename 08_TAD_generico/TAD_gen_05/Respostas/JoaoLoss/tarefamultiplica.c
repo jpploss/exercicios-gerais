@@ -30,7 +30,7 @@ tMult* CriaTarefaMultiplicar(float n1, float n2) {
  */
 void ExecutaTarefaMultiplicar(void *mult) {
     tMult* multTipado = (tMult*) mult;
-    printf("O resultado da multiplicacao de %.2f com %.2f eh: %.2f\n", multTipado->n1, multTipado->n2, multTipado->n1 * multTipado->n2);
+    printf("\nO resultado da multiplicacao de %.2f com %.2f eh: %.2f", multTipado->n1, multTipado->n2, multTipado->n1 * multTipado->n2);
 }
 
 /**

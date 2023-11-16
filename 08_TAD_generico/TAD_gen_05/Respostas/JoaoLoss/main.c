@@ -10,7 +10,6 @@ int main() {
     int qtdTarefas;
     printf("Digite o numero de tarefas: ");
     scanf("%d", &qtdTarefas);
-    printf("\n");
 
     tAgendaTarefas* agenda = CriaAgendaDeTarefas(qtdTarefas);
 

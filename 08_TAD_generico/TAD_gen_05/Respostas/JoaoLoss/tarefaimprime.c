@@ -17,7 +17,7 @@ struct impr {
 tImpr* CriaTarefaImprimir(char *msg) {
     tImpr* imp = malloc(sizeof(tImpr));
 
-    int tamBytesMsg = strlen(msg)*sizeof(char);
+    int tamBytesMsg = (strlen(msg)+1)*sizeof(char);
     imp->msg = malloc(tamBytesMsg);
     memcpy(imp->msg, msg, tamBytesMsg);
 
@@ -32,7 +32,7 @@ tImpr* CriaTarefaImprimir(char *msg) {
  */
 void ExecutaTarefaImprimir(void *imp) {
     tImpr* impTipado = (tImpr*)imp;
-    printf("%s\n", impTipado->msg);
+    printf("\n%s", impTipado->msg);
 }
 
 /**

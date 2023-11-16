@@ -30,7 +30,7 @@ tSoma* CriaTarefaSoma(float n1, float n2) {
  */
 void ExecutaTarefaSoma(void *sum) {
     tSoma* sumTipado = (tSoma*) sum;
-    printf("O resultado da soma de %.2f com %.2f eh: %.2f\n", sumTipado->n1, sumTipado->n2, sumTipado->n1 + sumTipado->n2);
+    printf("\nO resultado da soma de %.2f com %.2f eh: %.2f", sumTipado->n1, sumTipado->n2, sumTipado->n1 + sumTipado->n2);
 }
 
 /**
