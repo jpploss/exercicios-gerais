@@ -89,17 +89,13 @@ void CadastraTarefaNaAgenda(tAgendaTarefas* tar, int prioridade, void *tarefa, v
 
 void OrdenaTarefas(tTarefa** tarefas, int qtdTarefas) {
     tTarefa* aux;
-    int achouMaior = 0;
     for(int i = 0; i < qtdTarefas; i++) {
         for(int j = i+1; j < qtdTarefas; j++) {
             if(tarefas[j]->prioridade > tarefas[i]->prioridade) {
                 aux = tarefas[j];
-                achouMaior = 1;
+                tarefas[j] = tarefas[i];
+                tarefas[i] = aux;
             }
-        }
-        if(achouMaior) {
-            achouMaior = 0;
-            tarefas[i] = aux;
         }
     }
 }

@@ -18,9 +18,18 @@ int main() {
     char msg[101];
     float n1, n2;
     for(int i = 0; i < qtdTarefas; i++) {
-        scanf("%d %c ", &prioridade, &prefixo);
+
+        while(1) {
+            scanf("%d %c ", &prioridade, &prefixo);
+            if(prefixo == 'S' || prefixo == 'I' || prefixo == 'M') break;
+            printf("\nDigite um tipo de tarefa suportado (I/S/M))");
+            scanf("%*[^\n]");
+            scanf("%*c");
+        }
+        
+
         if(prefixo == 'I') {
-            scanf("%s", msg);
+            scanf("%[^\n]", msg);
             tImpr* imp = CriaTarefaImprimir(msg);
             CadastraTarefaNaAgenda(agenda, prioridade, imp, ExecutaTarefaImprimir, DestroiTarefaImprimir);
         } else if(prefixo == 'S') {
@@ -31,7 +40,7 @@ int main() {
             scanf("%f%f", &n1, &n2);
             tMult* mult = CriaTarefaMultiplicar(n1, n2);
             CadastraTarefaNaAgenda(agenda, prioridade, mult, ExecutaTarefaMultiplicar, DestroiTarefaMultiplicar);
-        }
+        } 
     }
 
     ExecutarTarefasDaAgenda(agenda);
