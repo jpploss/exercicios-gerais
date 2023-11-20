@@ -1,6 +1,7 @@
 #include "produto.h"
 #include <stdlib.h>
 #include <string.h>
+#include <stdio.h>
 
 /**
  * @brief Estrutura para representar um produto.
@@ -33,9 +34,10 @@ tProduto *CriaProduto(int codigo, char *nome, float preco, int quantidade) {
  * @brief Função para destruir um produto.
  * @param produto Um ponteiro para o produto a ser destruído.
  */
-void DestroiProduto(tProduto *produto) {
+void DestroiProduto(void* produto) {
+    tProduto* produtoAux = produto;
     if(produto != NULL) {
-        if(produto->nome != NULL) free(produto->nome);
+        if(produtoAux->nome != NULL) free(produtoAux->nome);
         free(produto);
     }
 }
@@ -51,10 +53,27 @@ void DestroiProduto(tProduto *produto) {
  * @return Um ponteiro para o produto lido.
  */
 tProduto *LeProduto(FILE *arquivo) {
-    int* codigo, qtd;
-    float* preco;
+
+    int codigo, qtd;
+    float preco;
     char nome[51];
-    
+    fread(&codigo, sizeof(int), 1, arquivo);
+
+    char letra;
+    int numLetra = 0;
+    // while(1) {
+    //     fread(&letra, sizeof(char), 1, arquivo);
+    //     nome[numLetra] = letra;
+    //     if(nome[numLetra] == 0) break;
+    //     numLetra += 1;
+    // }
+    fread(nome, sizeof(char), 50, arquivo);
+
+    fread(&preco, sizeof(float), 1, arquivo);
+    fread(&qtd, sizeof(int), 1, arquivo);
+
+    tProduto* produto = CriaProduto(codigo, nome, preco, qtd);
+    return produto;
 }
 
 /**
@@ -63,7 +82,7 @@ tProduto *LeProduto(FILE *arquivo) {
  * @return 1 se o produto tem estoque, 0 caso contrário.
  */
 int TemEstoqueProduto(tProduto *produto) {
-    if(produto->qtd > 0) return 1;
+    if(produto->qtd >= 1) return 1;
     return 0;
 }
 

@@ -21,7 +21,7 @@ tProduto *CriaProduto(int codigo, char *nome, float preco, int quantidade);
  * @brief Função para destruir um produto.
  * @param produto Um ponteiro para o produto a ser destruído.
  */
-void DestroiProduto(tProduto *produto);
+void DestroiProduto(void *produto);
 
 /**
  * @brief Função para ler um produto de um arquivo binário.
